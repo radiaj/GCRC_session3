@@ -2,7 +2,9 @@
 This repository contains the R code and files to run the GCRC session 3 bioinformatics workshop examples.
 
 # Instructions
-Prior to the class, be sure to download and install the Rstudio Dektop and R on your laptop.
+Transfer your results from the STAR/ folder on the cluster to your laptop with Filezilla. If you did nor run STAR or did not complete the exercise. You can download the results here in the counts/ folder. 
+
+Prior to the class, you will also need to download and install the Rstudio Dektop and R on your laptop.
 
 ## To install R and RStudio Desktop
 R can be downloaded for Linux, Mac and PC from https://cran.rstudio.com/. 
