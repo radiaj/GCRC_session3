@@ -15,7 +15,7 @@ module add R/3.2.1-gcc
 R
 
 ```
-# To Install DESeq2
+## To Install DESeq2
 You will also need to install the DESeq2 from Bioconductor. 
 Open RStudio or start an R session on Briaree.
 ```R
