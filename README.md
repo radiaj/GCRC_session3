@@ -12,7 +12,7 @@ RStudio Desktop can be downloaded for Linux, Mac and PC at https://www.rstudio.c
 
 Alternatively, you can run R on the Briaree cluster by adding the following module to your session and entering R on the terminal. 
 ```bash
-# On Briaree in the terminal enter
+# On Briaree in the terminal enter:
 module add R/3.2.1-gcc
 R
 
