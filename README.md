@@ -5,6 +5,9 @@ This repository contains the R code and files to run the GCRC session 3 bioinfor
 Transfer your results from the STAR/ folder on the cluster to your laptop with Filezilla. If you did not run STAR or did not complete the exercise. You can download the results here in the counts/ folder. 
 
 Prior to the class, you will also need to download and install the Rstudio Dektop and R on your laptop.
+You will also need to install the DESeq2, RColorBrewer, and gplots R packages need to run the scripts from Bioconductor and/or CRAN. 
+
+For general information on how to install R packages from the CRAN see https://www.r-bloggers.com/how-to-install-packages-on-r-screenshots/.
 
 ## To install R and RStudio Desktop
 R can be downloaded for Linux, Mac and PC from https://cran.rstudio.com/. 
@@ -17,8 +20,7 @@ module add R/3.2.1-gcc
 R
 
 ```
-## To Install DESeq2
-You will also need to install the DESeq2 from Bioconductor. 
+## To install DESeq2 (Bioconductor)
 Open RStudio or start an R session on Briaree.
 ```R
 # In your R session enter:
@@ -38,4 +40,11 @@ library("DESeq2")
 ```
 See http://www.bioconductor.org/packages/release/bioc/html/DESeq2.html for more information on the DESeq2 package and dependencies.
 
-
+## To install RColorBrewer (CRAN)
+```R
+install.packages("RColorBrewer")
+```
+## To intall gplots (CRAN)
+```R
+install.packages("gplots")
+```
