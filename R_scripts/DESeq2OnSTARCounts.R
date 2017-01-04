@@ -218,3 +218,27 @@ par(mar=c(15,5,2,2))
 heatmap.2(mat, Rowv=as.dendrogram(hc),
 symm=TRUE, trace='none',
 col = rev(hmcol), margin=c(13, 13), key.title="")
+
+#------------------------------------------------
+# Get the table of DEG genes with statistics
+#------------------------------------------------
+getDEGresultsDEseq2 <- function(dds, cc=c("grp", "HTSEQ", "STAR"), fname=NULL){
+	if(is.null(fname)) fname <- paste(cc[2], "_vs_", cc[3], "_DEG", sep="")
+	res <- results(dds, contrast=cc)
+	summary(res)
+
+	# Save the results by ordered q value
+	res <- res[order(res$padj),]
+
+	write.csv(as.data.frame(res), file=paste(fname, ".csv", sep=""))
+	#saveRDS(as.data.frame(res), paste0(fname, ".rds"))
+	return(res)
+}
+
+# Get the lists of Differentially expressed genes by pairwise comparison
+dds <- DESeq(dds1) 
+# 1
+res <- getDEGresultsDEseq2(dds)
+
+# Get MA plot
+plotMA(res,ylim=c(-0.1, 0.1),main="HTSeq vs STAR Counts", cex=1)
