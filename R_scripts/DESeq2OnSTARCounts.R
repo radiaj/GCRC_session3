@@ -237,7 +237,7 @@ getDEGresultsDEseq2 <- function(dds, cc=c("grp", "HTSEQ", "STAR"), fname=NULL){
 
 # Get the lists of Differentially expressed genes by pairwise comparison
 dds <- DESeq(dds1) 
-# 1
+
 res <- getDEGresultsDEseq2(dds)
 
 # Get MA plot
