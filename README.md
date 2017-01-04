@@ -43,8 +43,14 @@ See http://www.bioconductor.org/packages/release/bioc/html/DESeq2.html for more 
 ## To install RColorBrewer (CRAN)
 ```R
 install.packages("RColorBrewer")
+
+# Test your installation
+library("RColorBrewer")
 ```
 ## To intall gplots (CRAN)
 ```R
 install.packages("gplots")
+
+# Test your installation
+library("gplots")
 ```
