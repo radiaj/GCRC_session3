@@ -14,7 +14,7 @@ getHtseqVector <- function(df, column=1){
 }
 
 # Set the working directory
-setwd("C:/Users/Radia/Documents/Workshop_exercises/GCRC_session3-master/counts")
+setwd("~/Documents/Workshop_exercises/GCRC_session3-master/counts")
 
 files <- list.files()
 
