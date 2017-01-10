@@ -142,9 +142,15 @@ dataDF1 <- read.csv("DataStructureDF1.csv")
 help(read.delim)
 help(summary)
 
+# Creating and working wit lists
+myLIST <- list(a=x, b=mat1, c=df2)
+myLIST
 
-
-
+# Structure of lists
+str(myLIST)
+myLIST[[1]]
+myLIST[[2]]
+myLIST[["c"]]
 
 
 
